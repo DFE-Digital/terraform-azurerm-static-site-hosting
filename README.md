@@ -47,5 +47,7 @@ module "<MODULE NAME>" {
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_azurerm_resource_group_default"></a> [azurerm\_resource\_group\_default](#output\_azurerm\_resource\_group\_default) | Default Azure Resource Group |
 <!-- END_TF_DOCS -->
