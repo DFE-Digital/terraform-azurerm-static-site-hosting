@@ -7,5 +7,12 @@ locals {
   existing_resource_group = var.existing_resource_group
   resource_group          = local.existing_resource_group == "" ? azurerm_resource_group.default[0] : data.azurerm_resource_group.existing_resource_group[0]
 
+  deployment_type = {
+    is_storage        = var.deployment_type == "Storage",
+    is_static_web_app = var.deployment_type == "StaticWebApp"
+  }
+
+  custom_domain = var.custom_domain
+
   tags = var.tags
 }
