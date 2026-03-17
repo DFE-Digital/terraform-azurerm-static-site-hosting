@@ -24,3 +24,15 @@ variable "existing_resource_group" {
   type        = string
   default     = ""
 }
+
+variable "deployment_type" {
+  description = "Use either 'StaticWebApp' (for advanced options using staticwebapp.config.json and custom domain) or 'Storage'"
+  type        = string
+  default     = "Storage"
+}
+
+variable "custom_domain" {
+  description = "Custom domain for Static Web App"
+  type        = string
+  default     = ""
+}
